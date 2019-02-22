@@ -3,14 +3,15 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 import { AuthScreen } from '../screens/AuthScreen';
 import { LoginScreen } from '../screens/LoginScreen';
 
-const Auth = createStackNavigator(
+const AuthStack = createStackNavigator(
   {
     Auth: AuthScreen,
     Login: LoginScreen,
   },
   {
     initialRouteName: 'Auth',
+    headerMode: 'none',
   }
 );
 
-export default createAppContainer(Auth);
+export default createAppContainer(AuthStack);
