@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
 
 class LoginScreen extends Component {
   constructor(props) {
@@ -11,6 +11,7 @@ class LoginScreen extends Component {
     return (
       <View>
         <Text> Auth Screen </Text>
+        <Button title="Go to Login" onPress={() => this.props.navigation.navigate('Login')} />
       </View>
     );
   }
